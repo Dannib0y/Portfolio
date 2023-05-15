@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script src="https://kit.fontawesome.com/fd38482e0d.js" crossorigin="anonymous"></script>
+    <link rel="icon" href="Mylogo1.png">
+    <link
+  rel="stylesheet"
+  href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css"
+/>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <title>Dani's Web</title>
+</head>
+<body>
+    <header>
+        <nav class="flex items-center absolute w-full justify-between md:px-40 h-24">
+            <div>
+                <h1 class="text-white font-semibold logo text-md md:text-4xl"><span>Daniel</span></h1>
+            </div>
+            <div class="font-semibold">
+                <ul class="elements text-white flex gap-8 ">
+                    <li class="nav-element">Home</li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+   
+    <section class="hero w-full h-screen md:flex items-center justify-between md:px-72">
+        
+        <div data-aos="zoom-in-up"
+        data-aos-duration="2000" class="text-white font-semibold ">
+            <h1 class="md:text-4xl md:p-2 flex">Hey, Iam</h1>
+            <h1 <span class="spans"></span></h1>
+            <h1  data-aos="fade-left"
+            data-aos-offset="300"
+            data-aos-duration="1000"
+            class="md:text-7xl md:p-2 flex"><span class="spans">DANIEL</span></h1>
+            <h1 class="md:text-4xl md:p-2 flex">Web Developer...</h1>
+        </div>
+        <div data-aos="fade-right"
+        data-aos-duration="2000">
+            <img class="h-3/4" src="MyImage2.jpg" alt="">
+        </div>
+    </section>
+
+    <section class="about text-white text-center flex flex-col items-center justify-center">
+        <h1 data-aos="fade-down"
+        data-aos-duration="2000" class="text-center underline underline-offset-8 text-5xl" style="text-decoration-color: #F4FA1A;">ABOUT</h1>
+        <div class="flex items-center justify-center">
+        <h1 data-aos="fade-up"
+        data-aos-duration="2000" class="p-24 text-xl w-1/2 text-justify">Hey iam A Daniel Developer who is fresh to start a career in Wev Develeoping.</h1>
+        </div>
+        <div  class="details  flex w-full gap-16 md:p-10">
+            <div data-aos="fade-right"
+            data-aos-duration="1000" class="flex border-l-4 border-yellow-400 p-10 flex-col items-center justify-center md:w-1/4 gap-4">
+                <div class="Email text-white flex items-center justify-center w-24 h-24 ">
+                    <i class="fa-solid fa-user fa-2xl"></i>    
+                </div>
+                <h1 class="font-bold">Full Name</h1>
+                <h1 class="font-bold">Daniel A</h1>
+            </div>
+        <div data-aos="fade-up"
+            data-aos-duration="1000" class="flex border-t-4 border-yellow-400 p-10 flex-col items-center justify-center md:w-1/4 gap-4">
+                <div class="Email text-white  flex items-center justify-center w-24 h-24 ">
+                    <i class="fa-solid fa-envelope fa-2xl"></i>
+
+                </div>
+                <h1 class="font-bold">Email</h1>
+                <a class="btn font-bold" href="mailto:daniboi6025@gmail.com">daniboi6025@gmail.com</a>
+            </div>
+            <div data-aos="fade-down"
+            data-aos-duration="1000" class="flex border-b-4 border-yellow-400 p-10 flex-col items-center justify-center md:w-1/4 gap-4">
+                <div class="Email text-white  flex items-center justify-center w-24 h-24 ">
+                 <i class="fa-solid fa-phone fa-2xl"></i>
+
+                </div>
+                <h1 class="font-bold">Phone Number</h1>
+                <a href="tel:+919585494463"  class="btn font-bold">9585494463</a>
+            </div>
+            <div data-aos="fade-left"
+            data-aos-duration="1000" class="flex flex-col border-r-4 border-yellow-400 p-10  items-center justify-center md:w-1/4 gap-4">
+                <div class="Email text-white  flex items-center justify-center w-24 h-24 ">
+                    <i class="fa-brands fa-github fa-2xl"></i>
+
+                </div>
+                <h1 class="font-bold">Github</h1>
+                <a class="btn font-bold" href="https://www.github.com/Dannib0y" target="_blank">Daniel</a>
+            </div>
+        </div>
+        <div class="p-10">
+            <a href="Danny resume.pdf" class="flex " download>
+                <div data-aos="zoom-in-up"
+                data-aos-duration="1000" class="h-20 md:w-80 text-black rounded-lg gap-4 hover:opacity-50  font-bold md:text-2xl flex items-center res-btn justify-center">
+                    Download Resume <i class="fa-sharp fa-solid fa-download"></i>
+                </div>
+            </a>
+        </div>  
+    </section>
+
+    <section class="contact" id="contact">
+        <h1 class="font-semibold underline text-center p-24 underline-offset-8 text-5xl text-white" style="text-decoration-color: #F4FA1A;">Get in Touch</h1>
+        <form action="" id="contactform" onsubmit="sendMail(); reset(); return false;" class="">
+            <div class="text-white flex flex-col items-center justify-center w-full">
+                <div class="w-full flex items-center justify-center gap-16 py-10">
+                    <input id="name" type="text" class="w-1/4 bg-transparent border-b-2 text-xl p-4" placeholder="Name">
+                    <input id="lastname" type="text" class="w-1/4 bg-transparent border-b-2 text-xl p-4" placeholder="Last Name">
+                </div>
+                <div class="w-full flex items-center justify-center gap-16 py-10">
+                    <input type="email" id="email" class="w-1/4 bg-transparent border-b-2 text-xl p-4" placeholder="Email">
+                    <input type="tel" id="phno"class="w-1/4 bg-transparent border-b-2 text-xl p-4" placeholder="Phone Number">
+                </div>
+                <div class="w-full flex items-center justify-center gap-16 py-10">
+                    <textarea id="Message"  class="w-1/2 bg-transparent border-2 text-xl p-4" placeholder="Message....." id="" cols="30" rows="10"></textarea>
+
+                </div>
+                <div class="p-10">
+                <div class="flex p-10 text-black submit-btn w-64 h-20 items-center justify-center p-10">
+                    <button type="submit" onclick="sendMail()" class=" rounded font-bold w-64 h-20 text-2xl">Submit Now</button>
+                </div></div>
+            </div>
+                
+        </form>
+    </section>
+
+    <footer class="items-center justify-center p-10 flex">
+        <h1 class="text-xl font-bold">©️ Reserverd Daniel A</h1>
+    </footer>
+
+
+    <script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
+
+    <script src="index.js"></script>
+    <script src="https://smtpjs.com/v3/smtp.js"></script> 
+        <script>
+            function sendEmail(){
+        Email.send({
+            Host : "smtp.elasticemail.com",
+            Username : "username",
+            Password : "password",
+            To : 'them@website.com',
+            From : "you@isp.com",
+            Subject : "This is the subject",
+            Body : "And this is the body"
+    }).then(
+      message => alert(message)
+    );
+}
+       
+     </script>
+    <script>
+        AOS.init();
+      </script>
+</body>
+</html>
